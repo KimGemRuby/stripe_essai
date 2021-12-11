@@ -1,0 +1,48 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Products</h1>
+
+<div id="products">
+  <%= render @products %>
+</div>
+
+<%= link_to "New product", new_product_path %>
+
+<h1>Products</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Currency</th>
+    <th>Price</th>
+    <th>Stripe Product Id</th>
+    <th>Stripe Price Id</th>
+    <th>Stripe Currency</th>
+    <th>Stripe Price</th>
+    <th>Shopping cart</th>
+    <th>Sales count</th>
+    <th colspan="2"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= product %></td>
+      <td><%= product %></td>
+      <td><%= product %></td>
+      <td><%= product %></td>
+
+
+
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
+<hr>
