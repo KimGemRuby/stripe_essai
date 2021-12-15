@@ -73,3 +73,8 @@ group :test do
   gem "selenium-webdriver", ">= 4.0.0"
   gem "webdrivers"
 end
+
+
+gem 'stripe'
+gem 'activesupport'
+gem 'dotenv-rails'
